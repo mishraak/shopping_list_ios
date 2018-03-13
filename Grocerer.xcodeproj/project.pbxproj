@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		299E052A1F89801500B1F7AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 299E05291F897FF800B1F7AF /* GoogleService-Info.plist */; };
+		29AACEFA1F8AA0B8002FBE7E /* SaveListOnCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AACEF91F8AA0B7002FBE7E /* SaveListOnCloud.m */; };
+		29AACF061F8ABFB9002FBE7E /* ReadDataFromCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AACF051F8ABFB8002FBE7E /* ReadDataFromCloud.m */; };
+		29AACF091F8AC169002FBE7E /* CompareGroceryLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AACF081F8AC168002FBE7E /* CompareGroceryLists.m */; };
+		29AACF0F1F8AD303002FBE7E /* DeleteListFromCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AACF0E1F8AD303002FBE7E /* DeleteListFromCloud.m */; };
+		29AACF121F8AD4FD002FBE7E /* SaveItemOnCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AACF111F8AD4FD002FBE7E /* SaveItemOnCloud.m */; };
+		29AACF151F8AD97D002FBE7E /* DeleteItemFromCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AACF141F8AD97D002FBE7E /* DeleteItemFromCloud.m */; };
+		29AACF1B1F8AE623002FBE7E /* InvitationClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AACF1A1F8AE623002FBE7E /* InvitationClass.m */; };
+		29AACF241F8AF8B0002FBE7E /* ReadInvitations.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AACF231F8AF8B0002FBE7E /* ReadInvitations.m */; };
+		29AACF271F8AFA95002FBE7E /* FetchInvitations.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AACF251F8AFA94002FBE7E /* FetchInvitations.m */; };
+		29AACF2A1F8AFC54002FBE7E /* RemoveTheInvitation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AACF291F8AFC54002FBE7E /* RemoveTheInvitation.m */; };
+		29B4122B1F88A2350013955D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B4122A1F88A2350013955D /* AppDelegate.m */; };
+		29B4122E1F88A2350013955D /* ListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B4122D1F88A2350013955D /* ListsViewController.m */; };
+		29B412311F88A2350013955D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B4122F1F88A2350013955D /* Main.storyboard */; };
+		29B412331F88A2350013955D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29B412321F88A2350013955D /* Assets.xcassets */; };
+		29B412361F88A2350013955D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B412341F88A2350013955D /* LaunchScreen.storyboard */; };
+		29B412391F88A2350013955D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B412381F88A2350013955D /* main.m */; };
+		29B412411F88A9EE0013955D /* ItemClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B412401F88A9EE0013955D /* ItemClass.m */; };
+		29B412441F88AB460013955D /* UserClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B412431F88AB460013955D /* UserClass.m */; };
+		29B412471F88ACA30013955D /* GroceryListClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B412461F88ACA30013955D /* GroceryListClass.m */; };
+		29B4124A1F88AEC90013955D /* AppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B412491F88AEC90013955D /* AppData.m */; };
+		29B412501F88B5BE0013955D /* PrepareFirstLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B4124F1F88B5BE0013955D /* PrepareFirstLists.m */; };
+		29B412531F88C35F0013955D /* WriteDataToDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B412521F88C35F0013955D /* WriteDataToDisk.m */; };
+		29B412561F88C59A0013955D /* ReadDataFromDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B412551F88C59A0013955D /* ReadDataFromDisk.m */; };
+		29B412591F88C6B20013955D /* WriteUserToDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B412581F88C6B20013955D /* WriteUserToDisk.m */; };
+		29B4125C1F88C7B70013955D /* ReadUserFromDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B4125B1F88C7B70013955D /* ReadUserFromDisk.m */; };
+		29B4125F1F88C8870013955D /* SetTheUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B4125E1F88C8870013955D /* SetTheUser.m */; };
+		29B412621F88D1060013955D /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B412611F88D1060013955D /* ItemsViewController.m */; };
+		C136D112C3542ED2E1F272F9 /* libPods-Grocerer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E783F5F3AFF0CD9EE67F6008 /* libPods-Grocerer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		299E05291F897FF800B1F7AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		29AACEF81F8AA0B7002FBE7E /* SaveListOnCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveListOnCloud.h; sourceTree = "<group>"; };
+		29AACEF91F8AA0B7002FBE7E /* SaveListOnCloud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveListOnCloud.m; sourceTree = "<group>"; };
+		29AACF041F8ABFB8002FBE7E /* ReadDataFromCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadDataFromCloud.h; sourceTree = "<group>"; };
+		29AACF051F8ABFB8002FBE7E /* ReadDataFromCloud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadDataFromCloud.m; sourceTree = "<group>"; };
+		29AACF071F8AC168002FBE7E /* CompareGroceryLists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompareGroceryLists.h; sourceTree = "<group>"; };
+		29AACF081F8AC168002FBE7E /* CompareGroceryLists.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompareGroceryLists.m; sourceTree = "<group>"; };
+		29AACF0D1F8AD303002FBE7E /* DeleteListFromCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteListFromCloud.h; sourceTree = "<group>"; };
+		29AACF0E1F8AD303002FBE7E /* DeleteListFromCloud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteListFromCloud.m; sourceTree = "<group>"; };
+		29AACF101F8AD4FD002FBE7E /* SaveItemOnCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveItemOnCloud.h; sourceTree = "<group>"; };
+		29AACF111F8AD4FD002FBE7E /* SaveItemOnCloud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveItemOnCloud.m; sourceTree = "<group>"; };
+		29AACF131F8AD97D002FBE7E /* DeleteItemFromCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteItemFromCloud.h; sourceTree = "<group>"; };
+		29AACF141F8AD97D002FBE7E /* DeleteItemFromCloud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteItemFromCloud.m; sourceTree = "<group>"; };
+		29AACF191F8AE623002FBE7E /* InvitationClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvitationClass.h; sourceTree = "<group>"; };
+		29AACF1A1F8AE623002FBE7E /* InvitationClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvitationClass.m; sourceTree = "<group>"; };
+		29AACF221F8AF8B0002FBE7E /* ReadInvitations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadInvitations.h; sourceTree = "<group>"; };
+		29AACF231F8AF8B0002FBE7E /* ReadInvitations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadInvitations.m; sourceTree = "<group>"; };
+		29AACF251F8AFA94002FBE7E /* FetchInvitations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchInvitations.m; sourceTree = "<group>"; };
+		29AACF261F8AFA94002FBE7E /* FetchInvitations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchInvitations.h; sourceTree = "<group>"; };
+		29AACF281F8AFC54002FBE7E /* RemoveTheInvitation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveTheInvitation.h; sourceTree = "<group>"; };
+		29AACF291F8AFC54002FBE7E /* RemoveTheInvitation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveTheInvitation.m; sourceTree = "<group>"; };
+		29B412261F88A2350013955D /* Grocerer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grocerer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B412291F88A2350013955D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		29B4122A1F88A2350013955D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		29B4122C1F88A2350013955D /* ListsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListsViewController.h; sourceTree = "<group>"; };
+		29B4122D1F88A2350013955D /* ListsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListsViewController.m; sourceTree = "<group>"; };
+		29B412301F88A2350013955D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29B412321F88A2350013955D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29B412351F88A2350013955D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29B412371F88A2350013955D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29B412381F88A2350013955D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B4123F1F88A9EE0013955D /* ItemClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemClass.h; sourceTree = "<group>"; };
+		29B412401F88A9EE0013955D /* ItemClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemClass.m; sourceTree = "<group>"; };
+		29B412421F88AB460013955D /* UserClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserClass.h; sourceTree = "<group>"; };
+		29B412431F88AB460013955D /* UserClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserClass.m; sourceTree = "<group>"; };
+		29B412451F88ACA30013955D /* GroceryListClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroceryListClass.h; sourceTree = "<group>"; };
+		29B412461F88ACA30013955D /* GroceryListClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroceryListClass.m; sourceTree = "<group>"; };
+		29B412481F88AEC90013955D /* AppData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppData.h; sourceTree = "<group>"; };
+		29B412491F88AEC90013955D /* AppData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppData.m; sourceTree = "<group>"; };
+		29B4124E1F88B5BE0013955D /* PrepareFirstLists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrepareFirstLists.h; sourceTree = "<group>"; };
+		29B4124F1F88B5BE0013955D /* PrepareFirstLists.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrepareFirstLists.m; sourceTree = "<group>"; };
+		29B412511F88C35F0013955D /* WriteDataToDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WriteDataToDisk.h; sourceTree = "<group>"; };
+		29B412521F88C35F0013955D /* WriteDataToDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WriteDataToDisk.m; sourceTree = "<group>"; };
+		29B412541F88C59A0013955D /* ReadDataFromDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadDataFromDisk.h; sourceTree = "<group>"; };
+		29B412551F88C59A0013955D /* ReadDataFromDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadDataFromDisk.m; sourceTree = "<group>"; };
+		29B412571F88C6B20013955D /* WriteUserToDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WriteUserToDisk.h; sourceTree = "<group>"; };
+		29B412581F88C6B20013955D /* WriteUserToDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WriteUserToDisk.m; sourceTree = "<group>"; };
+		29B4125A1F88C7B70013955D /* ReadUserFromDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadUserFromDisk.h; sourceTree = "<group>"; };
+		29B4125B1F88C7B70013955D /* ReadUserFromDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadUserFromDisk.m; sourceTree = "<group>"; };
+		29B4125D1F88C8870013955D /* SetTheUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetTheUser.h; sourceTree = "<group>"; };
+		29B4125E1F88C8870013955D /* SetTheUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetTheUser.m; sourceTree = "<group>"; };
+		29B412601F88D1060013955D /* ItemsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
+		29B412611F88D1060013955D /* ItemsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
+		955719FE2CE95245EA001462 /* Pods-Grocerer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocerer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grocerer/Pods-Grocerer.debug.xcconfig"; sourceTree = "<group>"; };
+		B1247D35F6DFEDC19E1341D1 /* Pods-Grocerer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocerer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grocerer/Pods-Grocerer.release.xcconfig"; sourceTree = "<group>"; };
+		E783F5F3AFF0CD9EE67F6008 /* libPods-Grocerer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Grocerer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B412231F88A2350013955D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C136D112C3542ED2E1F272F9 /* libPods-Grocerer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AD72F72E49037C73D9DCBC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				955719FE2CE95245EA001462 /* Pods-Grocerer.debug.xcconfig */,
+				B1247D35F6DFEDC19E1341D1 /* Pods-Grocerer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		29B4121D1F88A2350013955D = {
+			isa = PBXGroup;
+			children = (
+				29B412281F88A2350013955D /* Grocerer */,
+				29B412271F88A2350013955D /* Products */,
+				0AD72F72E49037C73D9DCBC9 /* Pods */,
+				5FFF8D6583559CCDC99A88B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29B412271F88A2350013955D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29B412261F88A2350013955D /* Grocerer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B412281F88A2350013955D /* Grocerer */ = {
+			isa = PBXGroup;
+			children = (
+				299E05291F897FF800B1F7AF /* GoogleService-Info.plist */,
+				29B412291F88A2350013955D /* AppDelegate.h */,
+				29B4122A1F88A2350013955D /* AppDelegate.m */,
+				29AACF221F8AF8B0002FBE7E /* ReadInvitations.h */,
+				29AACF231F8AF8B0002FBE7E /* ReadInvitations.m */,
+				29AACF261F8AFA94002FBE7E /* FetchInvitations.h */,
+				29AACF251F8AFA94002FBE7E /* FetchInvitations.m */,
+				29AACF0D1F8AD303002FBE7E /* DeleteListFromCloud.h */,
+				29AACF0E1F8AD303002FBE7E /* DeleteListFromCloud.m */,
+				29AACF131F8AD97D002FBE7E /* DeleteItemFromCloud.h */,
+				29AACF141F8AD97D002FBE7E /* DeleteItemFromCloud.m */,
+				29AACF101F8AD4FD002FBE7E /* SaveItemOnCloud.h */,
+				29AACF111F8AD4FD002FBE7E /* SaveItemOnCloud.m */,
+				29AACF041F8ABFB8002FBE7E /* ReadDataFromCloud.h */,
+				29AACF051F8ABFB8002FBE7E /* ReadDataFromCloud.m */,
+				29B4122C1F88A2350013955D /* ListsViewController.h */,
+				29B4122D1F88A2350013955D /* ListsViewController.m */,
+				29AACF281F8AFC54002FBE7E /* RemoveTheInvitation.h */,
+				29AACF291F8AFC54002FBE7E /* RemoveTheInvitation.m */,
+				29AACF071F8AC168002FBE7E /* CompareGroceryLists.h */,
+				29AACF081F8AC168002FBE7E /* CompareGroceryLists.m */,
+				29AACEF81F8AA0B7002FBE7E /* SaveListOnCloud.h */,
+				29AACEF91F8AA0B7002FBE7E /* SaveListOnCloud.m */,
+				29B4123F1F88A9EE0013955D /* ItemClass.h */,
+				29B412401F88A9EE0013955D /* ItemClass.m */,
+				29B412421F88AB460013955D /* UserClass.h */,
+				29B412431F88AB460013955D /* UserClass.m */,
+				29AACF191F8AE623002FBE7E /* InvitationClass.h */,
+				29AACF1A1F8AE623002FBE7E /* InvitationClass.m */,
+				29B412451F88ACA30013955D /* GroceryListClass.h */,
+				29B412461F88ACA30013955D /* GroceryListClass.m */,
+				29B412481F88AEC90013955D /* AppData.h */,
+				29B412491F88AEC90013955D /* AppData.m */,
+				29B412511F88C35F0013955D /* WriteDataToDisk.h */,
+				29B412521F88C35F0013955D /* WriteDataToDisk.m */,
+				29B412541F88C59A0013955D /* ReadDataFromDisk.h */,
+				29B412551F88C59A0013955D /* ReadDataFromDisk.m */,
+				29B412571F88C6B20013955D /* WriteUserToDisk.h */,
+				29B412581F88C6B20013955D /* WriteUserToDisk.m */,
+				29B4125A1F88C7B70013955D /* ReadUserFromDisk.h */,
+				29B4125B1F88C7B70013955D /* ReadUserFromDisk.m */,
+				29B4125D1F88C8870013955D /* SetTheUser.h */,
+				29B4125E1F88C8870013955D /* SetTheUser.m */,
+				29B4124E1F88B5BE0013955D /* PrepareFirstLists.h */,
+				29B4124F1F88B5BE0013955D /* PrepareFirstLists.m */,
+				29B4122F1F88A2350013955D /* Main.storyboard */,
+				29B412601F88D1060013955D /* ItemsViewController.h */,
+				29B412611F88D1060013955D /* ItemsViewController.m */,
+				29B412321F88A2350013955D /* Assets.xcassets */,
+				29B412341F88A2350013955D /* LaunchScreen.storyboard */,
+				29B412371F88A2350013955D /* Info.plist */,
+				29B412381F88A2350013955D /* main.m */,
+			);
+			path = Grocerer;
+			sourceTree = "<group>";
+		};
+		5FFF8D6583559CCDC99A88B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E783F5F3AFF0CD9EE67F6008 /* libPods-Grocerer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29B412251F88A2350013955D /* Grocerer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29B4123C1F88A2350013955D /* Build configuration list for PBXNativeTarget "Grocerer" */;
+			buildPhases = (
+				3C9897188482D85FE4A65A24 /* [CP] Check Pods Manifest.lock */,
+				29B412221F88A2350013955D /* Sources */,
+				29B412231F88A2350013955D /* Frameworks */,
+				29B412241F88A2350013955D /* Resources */,
+				9F5941153CA2DA3E288E801E /* [CP] Embed Pods Frameworks */,
+				AC690DFCBA19EEF6D084D9CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Grocerer;
+			productName = Grocerer;
+			productReference = 29B412261F88A2350013955D /* Grocerer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B4121E1F88A2350013955D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Cinard Digital Media Institute";
+				TargetAttributes = {
+					29B412251F88A2350013955D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 29B412211F88A2350013955D /* Build configuration list for PBXProject "Grocerer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B4121D1F88A2350013955D;
+			productRefGroup = 29B412271F88A2350013955D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29B412251F88A2350013955D /* Grocerer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29B412241F88A2350013955D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B412361F88A2350013955D /* LaunchScreen.storyboard in Resources */,
+				299E052A1F89801500B1F7AF /* GoogleService-Info.plist in Resources */,
+				29B412331F88A2350013955D /* Assets.xcassets in Resources */,
+				29B412311F88A2350013955D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C9897188482D85FE4A65A24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F5941153CA2DA3E288E801E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grocerer/Pods-Grocerer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC690DFCBA19EEF6D084D9CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grocerer/Pods-Grocerer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29B412221F88A2350013955D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29AACF121F8AD4FD002FBE7E /* SaveItemOnCloud.m in Sources */,
+				29B412441F88AB460013955D /* UserClass.m in Sources */,
+				29B4122E1F88A2350013955D /* ListsViewController.m in Sources */,
+				29AACF091F8AC169002FBE7E /* CompareGroceryLists.m in Sources */,
+				29B4124A1F88AEC90013955D /* AppData.m in Sources */,
+				29B412591F88C6B20013955D /* WriteUserToDisk.m in Sources */,
+				29B412471F88ACA30013955D /* GroceryListClass.m in Sources */,
+				29B412561F88C59A0013955D /* ReadDataFromDisk.m in Sources */,
+				29B412501F88B5BE0013955D /* PrepareFirstLists.m in Sources */,
+				29AACF151F8AD97D002FBE7E /* DeleteItemFromCloud.m in Sources */,
+				29AACEFA1F8AA0B8002FBE7E /* SaveListOnCloud.m in Sources */,
+				29B412391F88A2350013955D /* main.m in Sources */,
+				29AACF2A1F8AFC54002FBE7E /* RemoveTheInvitation.m in Sources */,
+				29AACF241F8AF8B0002FBE7E /* ReadInvitations.m in Sources */,
+				29B4122B1F88A2350013955D /* AppDelegate.m in Sources */,
+				29B412621F88D1060013955D /* ItemsViewController.m in Sources */,
+				29B412411F88A9EE0013955D /* ItemClass.m in Sources */,
+				29B412531F88C35F0013955D /* WriteDataToDisk.m in Sources */,
+				29AACF1B1F8AE623002FBE7E /* InvitationClass.m in Sources */,
+				29AACF271F8AFA95002FBE7E /* FetchInvitations.m in Sources */,
+				29B4125C1F88C7B70013955D /* ReadUserFromDisk.m in Sources */,
+				29B4125F1F88C8870013955D /* SetTheUser.m in Sources */,
+				29AACF0F1F8AD303002FBE7E /* DeleteListFromCloud.m in Sources */,
+				29AACF061F8ABFB9002FBE7E /* ReadDataFromCloud.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29B4122F1F88A2350013955D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B412301F88A2350013955D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29B412341F88A2350013955D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B412351F88A2350013955D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29B4123A1F88A2350013955D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		29B4123B1F88A2350013955D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29B4123D1F88A2350013955D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 955719FE2CE95245EA001462 /* Pods-Grocerer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5PX54PSAX;
+				INFOPLIST_FILE = Grocerer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.cinard.Grocerer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29B4123E1F88A2350013955D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1247D35F6DFEDC19E1341D1 /* Pods-Grocerer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5PX54PSAX;
+				INFOPLIST_FILE = Grocerer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.cinard.Grocerer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29B412211F88A2350013955D /* Build configuration list for PBXProject "Grocerer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29B4123A1F88A2350013955D /* Debug */,
+				29B4123B1F88A2350013955D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29B4123C1F88A2350013955D /* Build configuration list for PBXNativeTarget "Grocerer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29B4123D1F88A2350013955D /* Debug */,
+				29B4123E1F88A2350013955D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B4121E1F88A2350013955D /* Project object */;
+}
